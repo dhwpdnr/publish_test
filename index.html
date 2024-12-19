@@ -30,6 +30,13 @@
         font-weight: normal;
         font-style: normal;
       }
+      @font-face {
+        font-family: "NEXON Lv1 Gothic OTF";
+        src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff")
+          format("woff");
+        font-weight: normal;
+        font-style: normal;
+      }
       * {
         margin: 0;
         padding: 0;
@@ -169,8 +176,8 @@
       .ranking-banner-indicator {
         display: flex;
         justify-content: space-between;
-        margin-top: -100px;
-        margin-bottom: 100px;
+        margin-top: -124px;
+        padding-bottom: 124px;
         z-index: 90;
         margin-left: -16px;
         margin-right: -16px;
@@ -229,8 +236,49 @@
       .lol-list-indicator {
         display: flex;
         justify-content: space-between;
-        margin-top: -188px;
-        margin-bottom: 188px;
+        margin-top: -224px;
+        margin-bottom: 224px;
+        margin-left: -16px;
+        margin-right: -16px;
+        z-index: 90;
+      }
+
+      .battle-ground-block {
+        margin: 10px 0;
+        padding: 4px;
+      }
+
+      .battle-ground-profile {
+        display: flex !important;
+        flex-direction: row;
+        border-radius: 8px;
+        box-shadow: 1px 1px 7px #00000040;
+        padding: 10px;
+      }
+
+      .battle-ground-block > .battle-ground-profile > .profile-img {
+        width: 150px;
+        height: 150px;
+        border: solid #666666;
+        border-radius: 8px;
+        object-fit: cover;
+      }
+
+      .battle-ground-block > .battle-ground-profile > .user-info {
+        border-radius: 8px;
+        width: 60%;
+        display: flex;
+        margin-left: 16px;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 4px;
+      }
+
+      .battle-ground-list-indicator {
+        display: flex;
+        justify-content: space-between;
+        margin-top: -224px;
+        margin-bottom: 224px;
         margin-left: -16px;
         margin-right: -16px;
         z-index: 90;
@@ -358,8 +406,13 @@
           </div>
         </div>
       </div>
+      <div class="text-area" style="margin: 40px 0">
+        <h1 style="text-align: center; font-family: 'NEXON Lv1 Gothic OTF'">
+          겜플리에서 게임 친구를 찾아 보세요 !
+        </h1>
+      </div>
       <div>
-        <h1>리그오브레전드</h1>
+        <h1 style="margin-bottom: 16px">리그오브레전드</h1>
         <div class="lol-list">
           <div class="lol-block">
             <div class="lol-profile">
@@ -456,6 +509,108 @@
             </span>
           </div>
           <div class="lol-nextArrow pointer">
+            <span class="material-symbols-outlined"> arrow_forward_ios </span>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h1 style="margin-bottom: 16px">배틀그라운드</h1>
+        <div class="battle-ground-list">
+          <div class="battle-ground-block">
+            <div class="battle-ground-profile">
+              <div class="profile-img"></div>
+              <div class="user-info">
+                <p>닉네임</p>
+                <p>게임명</p>
+                <p>소개내용</p>
+              </div>
+            </div>
+          </div>
+          <div class="battle-ground-block">
+            <div class="battle-ground-profile">
+              <img
+                src="./images/코딩노예.jpg"
+                alt=""
+                class="profile-img"
+              />
+              <div class="user-info">
+                <p>닉네임</p>
+                <p>게임명</p>
+                <p>소개내용</p>
+              </div>
+            </div>
+          </div>
+          <div class="battle-ground-block">
+            <div class="battle-ground-profile">
+              <div class="profile-img"></div>
+              <div class="user-info">
+                <p>닉네임</p>
+                <p>게임명</p>
+                <p>소개내용</p>
+              </div>
+            </div>
+          </div>
+          <div class="battle-ground-block">
+            <div class="battle-ground-profile">
+              <div class="profile-img"></div>
+              <div class="user-info">
+                <p>닉네임</p>
+                <p>게임명</p>
+                <p>소개내용</p>
+              </div>
+            </div>
+          </div>
+          <div class="battle-ground-block">
+            <div class="battle-ground-profile">
+              <div class="profile-img"></div>
+              <div class="user-info">
+                <p>닉네임</p>
+                <p>게임명</p>
+                <p>소개내용</p>
+              </div>
+            </div>
+          </div>
+          <div class="battle-ground-block">
+            <div class="battle-ground-profile">
+              <div class="profile-img"></div>
+              <div class="user-info">
+                <p>닉네임</p>
+                <p>게임명</p>
+                <p>소개내용</p>
+              </div>
+            </div>
+          </div>
+          <div class="battle-ground-block">
+            <div class="battle-ground-profile">
+              <div class="profile-img"></div>
+              <div class="user-info">
+                <p>닉네임</p>
+                <p>게임명</p>
+                <p>소개내용</p>
+              </div>
+            </div>
+          </div>
+          <div class="battle-ground-block">
+            <div class="battle-ground-profile">
+              <div class="profile-img"></div>
+              <div class="user-info">
+                <p>닉네임</p>
+                <p>게임명</p>
+                <p>소개내용</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="battle-ground-list-indicator">
+          <div class="battle-ground-prevArrow pointer">
+            <span
+              class="material-symbols-outlined"
+              style="transform: rotate(180deg)"
+            >
+              arrow_forward_ios
+            </span>
+          </div>
+          <div class="battle-ground-nextArrow pointer">
             <span class="material-symbols-outlined"> arrow_forward_ios </span>
           </div>
         </div>
@@ -558,6 +713,41 @@
           ],
           prevArrow: $(".lol-prevArrow"),
           nextArrow: $(".lol-nextArrow"),
+        });
+
+        $(".battle-ground-list").slick({
+          slidesToShow: 2,
+          rows: 2,
+          slidesToScroll: 1,
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 2,
+                rows: 2,
+                slidesToScroll: 1,
+                infinite: true,
+              },
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 2,
+                rows: 2,
+                slidesToScroll: 1,
+              },
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                rows: 2,
+                slidesToScroll: 1,
+              },
+            },
+          ],
+          prevArrow: $(".battle-ground-prevArrow"),
+          nextArrow: $(".battle-ground-nextArrow"),
         });
       });
     </script>
